@@ -37,5 +37,4 @@ In bash:
 
 I have written a short script, `GetHSC_Cutouts.py`, for downloading the images. Modify it however you like on your branch. It currently grabs images in all `grizy` bands, making cutouts roughly 525x525 in size. I picked this size because the WCS matrices are not the same for every location accross the survey... Meaning that some images will be 524x526, etc. I can trim all of these down to 512x512 in post-processing, then resample to lower resolution or cutout a specified region.
 
-
-
+Go into the `GetHSC_Cutouts.py` file and change the path to the Catalogues and your desired output directory (which I have confusingly called `Input` in my folder since I consider it as input for CNNs. You will then be ready to download images. Message me on slack if you have an issue.
