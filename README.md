@@ -1,4 +1,4 @@
-# SubaruHSC_TidalCNN
+# SubaruHSC tidal feature characterization with convolutional neural networks
 
 Group repo for the tidal CNN project. 
 
