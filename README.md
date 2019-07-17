@@ -16,7 +16,7 @@ You must then go into the `unagi` directory and do:
 
     python setup.py install
     
-This will put an `unagi` egg in the `site-packages` directory of your python module library located at `env/lib/pythonX.X/site-packages`. You can check the installation by moving to a directory that does not contain the `unagi` directory and starting python:
+This will put an `unagi` egg in the `site-packages` directory of your python module library located at `path_to_my_env/lib/pythonX.X/site-packages`. You can check the installation by moving to a directory that does not contain the `unagi` directory and starting python:
 
     import unagi
 
