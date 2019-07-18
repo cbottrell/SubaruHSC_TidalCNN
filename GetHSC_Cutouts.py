@@ -50,17 +50,8 @@ for objID,ra,dec,z in zip(objIDs,ras,decs,zs):
     
     # make cutouts
     try:
-    
-        try:
-            cutout_multi = hsc_cutout(coord, cutout_size=s_ang, filters=filters, archive=pdr2,
-                                    use_saved=False, output_dir=output_dir, variance=0, mask=0,
-                                    prefix=prefix.format(objID,cutout_width,cutout_width))
-        
-        # sleep a bit if this doesn't work, and retry
-        except:
-            time.sleep(120)
-            cutout_multi = hsc_cutout(coord, cutout_size=s_ang, filters=filters, archive=pdr2,
-                                      use_saved=False, output_dir=output_dir, variance=0, mask=0,
-                                      prefix=prefix.format(objID,cutout_width,cutout_width))
+        cutout_multi = hsc_cutout(coord, cutout_size=s_ang, filters=filters, archive=pdr2,
+                                use_saved=False, output_dir=output_dir, variance=0, mask=0,
+                                prefix=prefix.format(objID,cutout_width,cutout_width))
     except:
         continue
