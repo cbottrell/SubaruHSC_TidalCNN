@@ -8,7 +8,7 @@ Group repo for the tidal CNN project.
 
 Make sure you are using a python environment that you are comfortable changing. Always good practice to make a new virtual environment or conda environment for a new project. If it requires activation, `activate` it.
 
-I use Song Huang’s ‘unagi’ package — which you will have to clone from its git repository:
+I use Song Huang’s `unagi` package — which you will have to clone from its git repository:
 
     git clone https://github.com/dr-guangtou/unagi.git
 
