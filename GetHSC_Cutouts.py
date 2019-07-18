@@ -29,7 +29,8 @@ ras = cat_data[:,2].astype(float)
 decs = cat_data[:,3].astype(float)
 zs = cat_data[:,1].astype(float)
 
-filterIDs = ['g','r','i','z','y']
+# filterIDs = ['g','r','i','z','y']
+filterIDs = ['i',]
 
 for objID,ra,dec,z in zip(objIDs,ras,decs,zs):
     
