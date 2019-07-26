@@ -33,11 +33,11 @@ def download_file(args):
     submission = args
 
     creds = {
-        "user":"your-username-here",
-        "secret":"your-password-here"
+        "user":"your_username_here",
+        "secret":"your_password_here"
     }
 
-    with open(submission, "r") as f:
+    with open('./'+submission, "r") as f:
         while True:
             # https://stackoverflow.com/a/37573701
             r = requests.post("https://hsc-release.mtk.nao.ac.jp/das_cutout/pdr2/cgi-bin/cutout",
@@ -114,7 +114,7 @@ def make_hsc_lists():
     arcsec_per_pixel = 0.168 # arcsec/pixel
     s_ang = cutout_width / 2 * arcsec_per_pixel # arcsec
 
-    catalogue = "HSC-TF_all_2019-07-16.txt"
+    catalogue = "/Users/cbottrell/Project/HSC-Subaru/Catalogues/HSC-TF_all_2019-07-16.txt"
     filters = "GRIZY"
 
     # convert catalog to HSC acceptable lists and indices
@@ -147,8 +147,8 @@ def make_hsc_lists():
             f.write("\n".join(das_list))
         das_submissions.append(f_name)
 
-        if i==2:
-            break
+#        if i==2:
+#            break
 
 def get_submissions(start, end):
     if start==0 and end==0:
